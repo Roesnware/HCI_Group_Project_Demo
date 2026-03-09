@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>CampusPlanner</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./dashboard.css">
+    <link rel="stylesheet" href="./notifications.css">
+</head>
+    <body>
+        <div class="container">
+            <div class="nav">
+                <div class="navHeader">
+                    <h4 id="logo-text"><span id="logo-icon">📚</span>CampusPlanner</h4>
+                </div>
+                <span id="navText">Navigation</span>
+                <ul class="navList">
+                    <a href="./dashboard.html"><div><span id="nav-icon">🏠</span> Dashboard</div></a>
+                    <a href="./calendar.html"><div><span id="nav-icon">📅</span> Calendar</div></a>
+                    <a href="./addAssignment.html"><div><span id="nav-icon">➕</span> Add Assignment</div></a>
+                    <a class="active" href="./notifications.html"><div><span id="nav-icon">🔔</span> Notifications</div></a>
+                </ul>
+                <span id="navText">Courses</span>
+                <ul class="courseList">
+                    <a href=""><div><span id="course-icon">🔵</span> Computer Science</div></a>
+                    <a href=""><div><span id="course-icon">🔴</span> Programming</div></a>
+                    <a href=""><div><span id="course-icon">🟡</span> Pyschology</div></a>
+                    <a href=""><div><span id="course-icon">🟢</span> Discrete Math</div></a>
+                </ul>
+                <div class="profile">
+                    <div class="avatar">
+                        JD
+                    </div>
+                    <div id="profile-details">
+                        <div id="name">John Doe</div>
+                        <div id="class">Junior • CS Major</div>
+                    </div>
+                </div>
+            </div>
+            <div class="main">
+                <div class="flex">
+                    <div>
+                        <h1 class="header">Notifications 🔔</h1>
+                        <span class="sub">3 unread reminders and alerts</span>
+                    </div>
+                    <div class="button mark-read">Mark all as read</div>
+                </div>
+                <div class="tabs">
+                    <div class="tab notifcationsActive">All</div>
+                    <div class="tab">Unread (3)</div>
+                    <div class="tab">Due soon</div>
+                </div>
+                <div class="list">
+                    <div class="card unread">
+                        <div class="icon">🚨</div>
+                        <div class="body">
+                            <div class="top">
+                                <div class="title">Assignment due in 2 days</div>
+                                <div class="time">2h ago</div>
+                            </div>
+                            <div class="desc"><strong>Group Project</strong> is due on March 10. You've made 60% progress — keep going!</div>
+                            <div class="actions">
+                                <div class="button primary">View assignment</div>
+                                <div class="button">Dismiss</div>
+                            </div>
+                        </div>
+                        <div class="unread-dot"></div>
+                    </div>
+                    <div class="card unread">
+                        <div class="icon">📋</div>
+                        <div class="body">
+                            <div class="top">
+                                <div class="title">Assignment due in 4 days</div>
+                                <div class="time">5h ago</div>
+                            </div>
+                            <div class="desc"><strong>Research Paper – Manifest Destiny</strong> is due March 12. You haven't started yet.</div>
+                            <div class="actions">
+                                <div class="button primary">View assignment</div>
+                                <div class="button">Dismiss</div>
+                            </div>
+                        </div>
+                        <div class="unread-dot"></div>
+                    </div>
+                    <div class="card unread">
+                        <div class="icon">📅</div>
+                        <div class="body">
+                            <div class="top">
+                                <div class="title">Weekly summary</div>
+                                <div class="time">Today</div>
+                            </div>
+                            <div class="desc">You have <strong>3 assignments due this week</strong>.</div>
+                            <div class="actions">
+                                <div class="button">View calendar</div>
+                                <div class="button">Dismiss</div>
+                            </div>
+                        </div>
+                        <div class="unread-dot"></div>
+                    </div>
+                    <div class="card">
+                        <div class="icon">✅</div>
+                        <div class="body">
+                            <div class="top">
+                                <div class="title">Assignment completed</div>
+                                <div class="time">Mar 6</div>
+                            </div>
+                            <div class="desc"><strong>Coding Assignment 5 – Functions</strong> was marked complete. Great work!</div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="icon">📌</div>
+                        <div class="body">
+                            <div class="top">
+                                <div class="title">New assignment added</div>
+                                <div class="time">Mar 5</div>
+                            </div>
+                            <div class="desc"><strong>Quiz – Foundational Knowledge </strong> was added to Discrete Math.</div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

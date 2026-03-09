@@ -1,0 +1,99 @@
+.card {
+    background-color: white;
+    border: 1px solid var(--border);
+    border-radius: 1.25rem;
+    padding: 2rem;
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.group {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    flex: 1;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    gap: 1.25rem;
+}
+
+.label {
+    font-size: .875rem;
+    font-weight: 600;
+    color: var(--dark-blue);
+}
+
+.required {
+    color: #c0392b;
+}
+
+.input {
+    padding: .65rem .85rem;
+    border: 1px solid rgba(128, 128, 128, 0.4);
+    border-radius: .6rem;
+    font-size: .9rem;
+    background-color: var(--smokey);
+    color: var(--dark-blue);
+    width: 100%;
+    outline: none;
+    transition: border-color 0.15s;
+    font-family: inherit;
+}
+
+.input:focus {
+    border-color: var(--steel);
+}
+
+.select {
+    cursor: pointer;
+    appearance: auto;
+}
+
+.textArea {
+    resize: vertical;
+    min-height: 110px;
+    line-height: 1.5;
+}
+
+.actions {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: .75rem;
+    margin-top: .25rem;
+}
+
+.saveButton {
+    background-color: var(--steel);
+    color: white;
+    padding: .7rem 1.4rem;
+    border-radius: .75rem;
+    font-size: .9rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.cancelButton {
+    color: var(--dark-blue);
+    padding: .7rem 1.2rem;
+    border: 1px solid var(--border);
+    border-radius: .75rem;
+    font-size: .9rem;
+    cursor: pointer;
+}
+
+.backLink {
+    color: var(--text-muted);
+    font-size: .85rem;
+    white-space: nowrap;
+    align-self: center;
+}
+
+.backLink:hover {
+    color: var(--dark-blue);
+}

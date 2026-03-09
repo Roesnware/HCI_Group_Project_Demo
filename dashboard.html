@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>CampusPlanner</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./dashboard.css">
+</head>
+    <body>
+        <div class="container">
+            <div class="nav">
+                <div class="navHeader">
+                    <h4 id="logo-text"><span id="logo-icon">📚</span>CampusPlanner</h4>
+                </div>
+                <span id="navText">Navigation</span>
+                <ul class="navList">
+                    <a class= "active" href="./dashboard.html"><div><span id="nav-icon">🏠</span> Dashboard</div></a>
+                    <a href="./calendar.html"><div><span id="nav-icon">📅</span> Calendar</div></a>
+                    <a href="./addAssignment.html"><div><span id="nav-icon">➕</span> Add Assignment</div></a>
+                    <a href="./notifications.html"><div><span id="nav-icon">🔔</span> Notifications</div></a>
+                </ul>
+                <span id="navText">Courses</span>
+                <ul class="courseList">
+                    <a href=""><div><span id="course-icon">🔵</span> Computer Science</div></a>
+                    <a href=""><div><span id="course-icon">🔴</span> Programming</div></a>
+                    <a href=""><div><span id="course-icon">🟡</span> Pyschology</div></a>
+                    <a href=""><div><span id="course-icon">🟢</span> Discrete Math</div></a>
+                </ul>
+                <div class="profile">
+                    <div class="avatar">
+                        JD
+                    </div>
+                    <div id="profile-details">
+                        <div id="name">John Doe</div>
+                        <div id="class">Junior • CS Major</div>
+                    </div>
+                </div>
+            </div>
+            <div class="main">
+                <div class="flex">
+                    <div>
+                    <h1 class="header">Good morning, John 👋</h1>
+                    <span class="sub">Monday, March 9th, 2026 • You have 2 Assignments due this week</span>
+                    </div>
+                    <a id="assignment-button" href="./addAssignment.html"><div>+ Add Assignment</div></a>
+                </div>
+                <div class="task">
+                    <div class="taskCard">
+                        <div class="cardIcon">📝</div>
+                        <div class="cardText">
+                            <div class="number">8</div>
+                            <div class="text">Active Task</div>
+                        </div>
+                    </div>
+                    <div class="taskCard">
+                        <div class="cardIcon">⏰</div>
+                        <div class="cardText">
+                            <div class="number">2</div>
+                            <div class="text">Due this week</div>
+                        </div>
+                    </div>
+                    <div class="taskCard">
+                        <div class="cardIcon">✅</div>
+                        <div class="cardText">
+                            <div class="number">4</div>
+                            <div class="text">Completed</div>
+                        </div>
+                    </div>
+                    <div class="taskCard">
+                        <div class="cardIcon">📖</div>
+                        <div class="cardText">
+                            <div class="number">4</div>
+                            <div class="text">Courses</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="subContainer">
+                    <div class="assignments">
+                        <div class="assignmentCont">
+                            <h1 class="assignmentHeader">Upcoming Assignments</h1>
+                            <a href="./calendar.html"><div class="button">View Calendar</div></a>
+                        </div>
+                        <div class="assingmentCard">
+                            <div class="circle"></div>
+                            <div class="assignmentText">
+                                <div class="assignmentTitle">Research Paper</div>
+                                <div class="assignmentCourse"><span id="course-icon">🟡</span> Pyschology</div>
+                            </div>
+                        </div>
+                        <div class="assingmentCard">
+                            <div class="circle"></div>
+                            <div class="assignmentText">
+                                <div class="assignmentTitle">Group Project</div>
+                                <div class="assignmentCourse"><span id="course-icon">🔵</span> Computer Science</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="other">
+                        <div class="schedule">
+                            <h4 class="schedHeader">Todays Schedule</h4>
+                            <h6 class="schedText">Monday, March 9th</h6>
+                            <div class="scheduleCard">
+                                <div class="time">9:00 AM</div>
+                                <div class="details"> Study - CS Prototype</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

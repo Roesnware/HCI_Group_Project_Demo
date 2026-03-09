@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>CampusPlanner</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./dashboard.css">
+    <link rel="stylesheet" href="./addAssignment.css">
+</head>
+    <body>
+        <div class="container">
+            <div class="nav">
+                <div class="navHeader">
+                    <h4 id="logo-text"><span id="logo-icon">📚</span>CampusPlanner</h4>
+                </div>
+                <span id="navText">Navigation</span>
+                <ul class="navList">
+                    <a href="./dashboard.html"><div><span id="nav-icon">🏠</span> Dashboard</div></a>
+                    <a href="./calendar.html"><div><span id="nav-icon">📅</span> Calendar</div></a>
+                    <a class="active" href="./addAssignment.html"><div><span id="nav-icon">➕</span> Add Assignment</div></a>
+                    <a href="./notifications.html"><div><span id="nav-icon">🔔</span> Notifications</div></a>
+                </ul>
+                <span id="navText">Courses</span>
+                <ul class="courseList">
+                    <a href=""><div><span id="course-icon">🔵</span> Computer Science</div></a>
+                    <a href=""><div><span id="course-icon">🔴</span> Programming</div></a>
+                    <a href=""><div><span id="course-icon">🟡</span> Pyschology</div></a>
+                    <a href=""><div><span id="course-icon">🟢</span> Discrete Math</div></a>
+                </ul>
+                <div class="profile">
+                    <div class="avatar">JD</div>
+                    <div id="profile-details">
+                        <div id="name">John Doe</div>
+                        <div id="class">Junior • CS Major</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main">
+                <div class="flex">
+                    <div>
+                        <h1 class="header">Add Assignment ➕</h1>
+                        <span class="sub">Fill in the details to track a new assignment</span>
+                    </div>
+                    <a href="./dashboard.html" class="back-link">← Back to Dashboard</a>
+                </div>
+
+                <div class="card">
+
+                    <div class="group">
+                        <label class="label">Assignment Title <span class="required">*</span></label>
+                        <input class="input" type="text" placeholder="e.g. Coding Project – Nested Loops">
+                    </div>
+
+                    <div class="row">
+                        <div class="group">
+                            <label class="label">Course <span class="required">*</span></label>
+                            <select class="input select">
+                                <option value="">Select a course...</option>
+                                <option>🔵 Computer Science</option>
+                                <option>🔴 Programming</option>
+                                <option>🟡 Pyschology</option>
+                                <option>🟢 Discrete Math</option>
+                            </select>
+                        </div>
+                        <div class="group">
+                            <label class="label">Due Date <span class="required">*</span></label>
+                            <input class="input" type="date">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="group">
+                            <label class="label">Reminder</label>
+                            <select class="input select">
+                                <option>1 day before</option>
+                                <option selected>2 days before</option>
+                                <option>3 days before</option>
+                                <option>1 week before</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="group">
+                        <label class="label">Notes & Details</label>
+                        <textarea class="input textarea" placeholder="Add any notes or requirements about this assignment here..."></textarea>
+                    </div>
+
+                    <div class="actions">
+                        <a href="./dashboard.html"><div class="saveButton">💾 Save Assignment</div></a>
+                        <a href="./dashboard.html"><div class="cancelButton">Cancel</div></a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

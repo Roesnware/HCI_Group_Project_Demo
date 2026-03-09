@@ -1,0 +1,329 @@
+:root {
+    --dark-blue: #0D1F2D;
+    --light-blue: #546A7B;
+    --steel: #546A7B;
+    --smokey: #FAE1DF;
+    --sand: #E4C3AD;
+    --text-muted: #6b6b6b;
+    --border: rgba(128, 128, 128, 0.35);
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+.nav {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(155deg, #0D1F2D 0%, #07100F 50%, #07101A 100%);
+    height: 100%;
+    width: 22%;
+    min-width: 200px;
+    padding: 1.5rem 1rem;
+    color: gray;
+    flex-shrink: 0;
+}
+
+.navHeader {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 1.5rem;
+    margin-bottom: 1.75rem;
+    border-bottom: 1px solid var(--border);
+}
+
+#logo-text {
+    display: flex;
+    align-items: center;
+    gap: .4rem;
+    font-size: 1rem;
+}
+
+#logo-icon {
+    background-color: var(--sand);
+    padding: .4rem;
+    border-radius: .4rem;
+}
+
+#navText {
+    font-size: .7rem;
+    font-weight: 700;
+    letter-spacing: .05em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    padding-left: .25rem;
+}
+
+.navList,
+.courseList {
+    display: flex;
+    flex-direction: column;
+    gap: .35rem;
+    margin-top: .6rem;
+    margin-bottom: 1.75rem;
+}
+
+.navList a,
+.courseList a {
+    color: gray;
+    display: flex;
+    align-items: center;
+    padding: .6rem .5rem;
+    border-radius: .5rem;
+    font-size: .9rem;
+    transition: color 0.15s;
+}
+
+.navList a:hover,
+.courseList a:hover {
+    color: white;
+}
+
+.navList a.active {
+    background-color: var(--steel);
+    color: white;
+    font-size: 1rem;
+}
+
+#nav-icon {
+    margin-right: .5rem;
+}
+
+#course-icon {
+    font-size: .55rem;
+    margin-right: .5rem;
+}
+
+.profile {
+    margin-top: auto;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    gap: .75rem;
+}
+
+.avatar {
+    background-color: var(--smokey);
+    padding: .75rem;
+    border-radius: 1rem;
+    color: var(--dark-blue);
+    font-weight: 600;
+    font-size: .9rem;
+    flex-shrink: 0;
+}
+
+#name {
+    color: white;
+    font-size: .9rem;
+    font-weight: 600;
+}
+
+#class {
+    color: var(--text-muted);
+    font-size: .75rem;
+    margin-top: .2rem;
+}
+
+.main {
+    background-color: var(--smokey);
+    flex: 1;
+    height: 100%;
+    padding: 2rem 2.5rem;
+    overflow-y: auto;
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.header {
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin-bottom: .35rem;
+}
+
+.sub {
+    color: var(--text-muted);
+    font-size: .85rem;
+}
+
+#assignment-button {
+    color: white;
+    background-color: var(--steel);
+    padding: .75rem 1.25rem;
+    border-radius: .75rem;
+    font-size: .9rem;
+    white-space: nowrap;
+}
+
+.task {
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+    margin-bottom: 2.5rem;
+}
+
+.taskCard {
+    display: flex;
+    align-items: center;
+    gap: .75rem;
+    flex: 1;
+    padding: 1.25rem;
+    background-color: white;
+    border-radius: 1.25rem;
+    border: 1px solid var(--border);
+}
+
+.cardIcon {
+    background-color: var(--sand);
+    border-radius: .5rem;
+    padding: .5rem;
+    font-size: 1.35rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.cardText {
+    display: flex;
+    flex-direction: column;
+    gap: .15rem;
+}
+
+.number {
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.text {
+    font-size: .8rem;
+    color: var(--text-muted);
+}
+
+.subContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    align-items: flex-start;
+}
+
+.assignments {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.assignmentCont {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: .75rem;
+}
+
+.assignmentHeader {
+    font-size: 1.15rem;
+    font-weight: 600;
+}
+
+.button {
+    color: var(--dark-blue);
+    padding: .4rem .75rem;
+    border: 1px solid var(--dark-blue);
+    border-radius: .5rem;
+    font-size: .8rem;
+}
+
+.assingmentCard {
+    background-color: white;
+    padding: 1rem 1.25rem;
+    border: 1px solid var(--border);
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: .75rem;
+}
+
+.circle {
+    border: 1px solid gray;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.assignmentTitle {
+    font-weight: 600;
+    font-size: .95rem;
+}
+
+.assignmentCourse {
+    font-size: .8rem;
+    color: var(--text-muted);
+    margin-top: .2rem;
+}
+
+.other {
+    flex-shrink: 0;
+}
+
+.schedule {
+    background-color: white;
+    padding: 1.25rem;
+    border: 1px solid var(--border);
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: .35rem;
+    width: 210px;
+    min-height: 200px;
+}
+
+.schedHeader {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.schedText {
+    font-size: .8rem;
+    color: var(--text-muted);
+    margin-bottom: .5rem;
+}
+
+.scheduleCard {
+    background-color: rgba(84, 106, 123, 0.15);
+    padding: .75rem 1rem;
+    border-radius: .75rem;
+    display: flex;
+    flex-direction: column;
+    gap: .25rem;
+    margin-top: .25rem;
+}
+
+.time {
+    font-size: .75rem;
+    color: var(--text-muted);
+}
+
+.details {
+    font-size: .85rem;
+    font-weight: 500;
+    color: var(--dark-blue);
+}

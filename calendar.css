@@ -1,0 +1,190 @@
+.calControls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.25rem;
+}
+
+.calNav {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.calMonth {
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: var(--dark-blue);
+    min-width: 140px;
+    text-align: center;
+}
+
+.calArrow {
+    font-size: 1.5rem;
+    color: var(--dark-blue);
+    cursor: pointer;
+    padding: .2rem .6rem;
+    border-radius: .4rem;
+    border: 1px solid var(--border);
+    background-color: white;
+    line-height: 1.4;
+}
+
+.calArrow:hover {
+    background-color: var(--sand);
+}
+
+.calViewToggle {
+    display: flex;
+    border: 1px solid var(--border);
+    border-radius: .5rem;
+    overflow: hidden;
+    background-color: white;
+}
+
+.calView {
+    padding: .4rem 1rem;
+    font-size: .85rem;
+    cursor: pointer;
+    color: var(--text-muted);
+}
+
+.calView.active {
+    background-color: var(--dark-blue);
+    color: white;
+}
+
+.calGrid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    border-radius: 1rem;
+    overflow: hidden;
+    border: 1px solid var(--border);
+    background-color: var(--border);
+    gap: 1px;
+    margin-bottom: 1.25rem;
+}
+
+.calDayHeader {
+    background-color: var(--dark-blue);
+    color: white;
+    text-align: center;
+    padding: .6rem 0;
+    font-size: .8rem;
+    font-weight: 600;
+    letter-spacing: .04em;
+    text-transform: uppercase;
+}
+
+.calCell {
+    background-color: white;
+    min-height: 90px;
+    padding: .5rem .6rem;
+    display: flex;
+    flex-direction: column;
+    gap: .3rem;
+}
+
+.calCell.otherMonth {
+    background-color: #f7f7f7;
+}
+
+.calCell.otherMonth .calDate {
+    color: #bbb;
+}
+
+.calCell.today .calDate {
+    background-color: var(--steel);
+    color: white;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+}
+
+.calDate {
+    font-size: .85rem;
+    font-weight: 500;
+    color: var(--dark-blue);
+}
+
+.calEvent {
+    font-size: .72rem;
+    font-weight: 600;
+    padding: .2rem .5rem;
+    border-radius: .35rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.calEvent.cs {
+    background-color: #dbeafe;
+    color: #1e40af;
+}
+
+.calEvent.psych {
+    background-color: #fef3c7;
+    color: #92400e;
+}
+
+.calEvent.prog {
+    background-color: #fde8e8;
+    color: #9b1c1c;
+}
+
+.calEvent.math {
+    background-color: #d1fae5;
+    color: #065f46;
+}
+
+.calEvent.completed {
+    background-color: #f3f4f6;
+    color: #6b7280;
+}
+
+.calLegend {
+    display: flex;
+    flex-direction: row;
+    gap: 1.25rem;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.legendItem {
+    display: flex;
+    align-items: center;
+    gap: .4rem;
+    font-size: .8rem;
+    color: var(--text-muted);
+}
+
+.legendDot {
+    width: 10px;
+    height: 10px;
+    border-radius: .2rem;
+    flex-shrink: 0;
+}
+
+.legendDot.cs       { 
+    background-color: #93c5fd; 
+}
+
+.legendDot.psych    { 
+    background-color: #fcd34d; 
+}
+
+.legendDot.prog     { 
+    background-color: #fca5a5; 
+}
+
+.legendDot.math     { 
+    background-color: #6ee7b7; 
+}
+
+.legendDot.completed { 
+    background-color: #d1d5db; 
+}
